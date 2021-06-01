@@ -1,0 +1,45 @@
+#kevinHeading {
+    background-color: #18a3b5;
+    font-family: "Lucida Console", Lucida, monospace;
+    text-transform: Normal;
+    color:#ffb646;
+    text-align: center;
+    
+}
+
+.kevinBackground {
+    background-color: #d5f5f9;
+}
+
+.kevinDiv {
+    text-align: center;
+    color: #63064d
+}
+
+.kevinList {
+    color: #63064d;
+    text-align: center;
+}
+
+.kevinParagraph {
+    text-align: center;
+    color: #63064d
+    
+}
+
+#kevinTable {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    color: black;
+}
+
+.clubLogo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom-left-radius: 5%;
+    border-bottom-right-radius: 5%;
+    border-top-left-radius: 5%;
+    border-top-right-radius: 5%;
+}

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <title>Team 6 HTML Page</title>
+    <!--Start of Xuan's Work-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+     <!--(sophia's code) below lines are needed for bootstrap, this is the updated version 4, we all have our own html now-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/sophia.css">
+    <link rel="stylesheet" href="css/xuan.css">
+    <link rel="stylesheet" href="css/kevin.css">
+    <link rel="stylesheet" href="css/bon.css">
+    <style>
+        table,
+        th {
+            border: 0.5px solid black;
+            color: yellowgreen;
+        }
+
+        td {
+            border: 0.5px solid black;
+        }
+
+        /*sophias paragraph*/
+        p {
+            color: yellowgreen;
+            font-family: Ariel, Helvetica, Sans-serif;
+        }
+    </style>
+    <!--End of Xuan's Work-->
+</head>
+
+<body>
+
+<!--sophia added updated nav bar (with dark style) for v.4 w/ links to each own html-->
+
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <a class="navbar-brand" href="index.html">Team 6 Home Page</a>
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="kevin.html">Kevin's Page</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="xuan.html">Xuan's Page</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="sophia.html">Sophia's Page</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="bon.html">Bon's Page</a>
+      </li>
+    </ul>
+  </nav>
+
+<h1>Bon's Page</h1>
+    <!--Start Bon -->
+    <!--Mark's Comment 5/16: I don't see anything related to Bootstrap except the navbar on this page. Did Bon even work on this this week?-->
+    <a id="BonPage"> </a>
+        <a href="#BonPage"></a>
+    <div id="bon_background">
+        <hr>
+
+        <!--Mark Comment: you have a closing span but no opening span tag.-->
+        <!--Mark's Comment 5/16: Now it looks like you have an extra > sign.-->
+        <h3 id="bon_header">Bon's Work</h3>
+
+        <hr>
+
+        <p class="bon_text">Hey I'm Bon! I'm just going to use this spot to talk about me and my car I guess.</p>
+
+        <h2>About me</h2>
+
+        <p class="bon_text">I'm a Sophomore at UWB who's inteded major is in accounting. I like to do code for fun, so
+            i'm not that good at it, but I'd say I'm half decent.</p>
+        <p class="bon_text">I currently work at the Chase Bank in Fremont from 8:00am to 5:30pm. Makes my schedule very
+            tight and I even do some homework at work.</p>
+
+        <!--Mark's Comment: try to put all text within a paragraph or div tag-->
+        <!--Mark Comment: I expect you to fix things that I say in previous assignment comments!-->
+        <!--Mark's Comment 5/16: What I mean is, put lines 83-85 within a p or div tag! You don't want text that's outside of an element that declares what type of text it is.-->
+        <strong>
+            Things I like to do
+        </strong>
+
+        <div>
+            <ul style="list-style-type: square">
+                <li>Work on my Car</li>
+                <li>Chill with friends</li>
+                <li>Play Games</li>
+            </ul>
+        </div>
+
+        <h2>About my Car</h2>
+
+        <p class="bon_text">
+            <!--Mark's Comment: the br is one of those tags that doesn't need an end tag so delete the /br tags... but also, you might want to use div tags instead of br tags... *Fixed*-->
+            <br>I recently got a new car. It's the Scion FRS.
+            <!--Mark Comment: you still have a closing br tag here. *fixed* -->
+            <br>Its a pretty nice car. It's black, low milage, but the best part is that it is my dream car.
+            <br>I'm pretty proud of myself because not only is it my dream car, but I'm also paying for it myself.
+            <br>The picture below is how the front looks. Not the greatest picture, but there will be better eventually.
+        </p>
+
+        <img src="images/Frs.jpg" alt="Scion FRS" width="210" height="300">
+
+        <!--Mark's Comment: try to put all text within a p or div tag.-->
+        <!--Mark Comment: see above-->
+        <!--Mark's Comment 5/16: ditto -->
+        <div>
+          <br>I have plans on modifying it. Here are a list of planned modification and the brand. There will definitely
+          be a lot more in the future, but for now this is all I will do.<!--Mark's Comment 5/16: still an unnecessary closing /br here. *Fixed*-->
+        </div>
+<div class="accordion" id="accordionExample">
+  <div class="card">
+    <div class="card-header" id="headingOne">
+      <h5 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          Part List
+        </button>
+      </h5>
+    </div>
+  </div>
+</div>
+<div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+    <div class="card-body">
+      <div>
+          <table style="width:30%">
+              <tr>
+                  <!--Mark Comment: use the debug/problems panel in VSCode and resolve any errors before submitting the assignment! extra closing span tags here. *Fixed*-->
+                  <!--Mark's Comment 5/16: They're still here. *Fixed* -->
+                  <!--Bon 5/19: Changes did not save I swear-->
+                  <th class="table_header">Brand</th>
+                  <th class="table_header">Part Name</th>
+              </tr>
+              <tr>
+                  <td class="bon_text">Sparco</td>
+                  <td class="bon_text">Seats</td>
+              </tr>
+              <tr>
+                  <td class="bon_text">BC Racing</td>
+                  <td class="bon_text">Coilovers</td>
+              </tr>
+              <tr>
+                  <td class="bon_text">Tomei</td>
+                  <td class="bon_text">Unequal Length Headers</td>
+              </tr>
+              <tr>
+                  <td class="bon_text">AeroFlow</td>
+                  <td class="bon_text">Front Splitter</td>
+              </tr>
+          </table>
+      </div>
+    </div>
+  </div>
+</div>
+        <hr>
+        <br>
+        <hr>
+    <!-- End Bon -->
+    <!--below lines are needed for bootstrap-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

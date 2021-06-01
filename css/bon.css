@@ -1,0 +1,17 @@
+/* Mark Comment: it's not technically wrong, but you should put a space between the selector and the open curly bracket */
+/* Fixed */
+#bon_background {
+  background-color: #F3F3F3;
+}
+
+#bon_header {
+  color: #6495ED;
+}
+
+.bon_text {
+  color: black;
+}
+
+.table_header {
+  color: #005ce6;
+}
