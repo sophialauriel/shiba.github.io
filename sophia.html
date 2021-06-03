@@ -5,7 +5,7 @@
 <head>
 
     <title>Team 6 HTML Page</title>
-    <!--Start of Xuan's Work-->
+ 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
      <!--below lines are needed for bootstrap, this is the updated version 4-->
@@ -31,12 +31,36 @@
             font-family: Ariel, Helvetica, Sans-serif;
         }
     </style>
-    <!--End of Xuan's Work-->
+  
+
 </head>
 
-<body>
-    
 
+<!-- added clock-->
+
+    
+    <script>
+        function startTime() {
+          var today = new Date();
+          var h = today.getHours();
+          var m = today.getMinutes();
+          var s = today.getSeconds();
+          m = checkTime(m);
+          s = checkTime(s);
+          document.getElementById('txt').innerHTML =
+          h + ":" + m + ":" + s;
+          var t = setTimeout(startTime, 1000);
+        }
+        function checkTime(i) {
+          if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+          return i;
+        }
+        </script>
+       
+        
+        <body onload="startTime()">
+        
+        <div id="txt"></div>
 
     <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
     <a class="navbar-brand" href="index.html">Team 6 Home Page</a>
@@ -55,214 +79,69 @@
       </li>
     </ul>
   </nav>
+ <!-- if then condtional -->
+  <p>Display "Good day!" if the hour is less than 18:00:</p>
 
-  <!--Mark's Comment 5/16: I think I'd delete everything that's not yours now... -->
+<p id="demo30">Good Evening!</p>
 
-<h1>Team 6 HTML Page</h1>
-<p>The contributing members to this page are Kevin, Bon, Sophia, and Xuan.</p>
+<script>
+if (new Date().getHours() < 18) {
+  document.getElementById("demo30").innerHTML = "Good day!";
+}
+</script>
 
-    <!--Start of Kevin's Work-->
-    <a id="KevinPage"> </a>
-        <a href="#KevinPage"></a>
-    <div class="kevinDiv">
-        <h3 id="kevinHeading">Kevin's Work</h3>
-
-        <p class="kevinParagraph">Hey this is my portion of the our teams page and I will leave some information for my
-            teammates can get to know me a bit more based on my favorite hobby, which is gaming. But gaming refers to so
-            many different genres that people can not really get an understanding from simply that message. So what I
-            decided to do is make a table to show some of the genres of games I enjoy and the game I most enjoy in each
-            genre.</p>
-
-        <h4>Game Table</h4>
-
-        <table id="kevinTable">
-            <tr>
-                <th><span style="color:#ba7000">Genre</span></th>
-                <th><span style="color:#ba7000">Favorite Game</span></th>
-            </tr>
-
-            <tr>
-                <td>JRPG</td>
-                <td>The World Ends With You</td>
-            </tr>
-
-            <tr>
-                <td>Action Adenture</td>
-                <td>Yakuza 0</td>
-            </tr>
-
-            <tr>
-                <td>MMORPG</td>
-                <td>Final Fantasy 14</td>
-            </tr>
-
-            <tr>
-                <td>FPS</td>
-                <td>Borderlands 2</td>
-            </tr>
-
-            <tr>
-                <td>Survival Horror</td>
-                <td>Resident Evil 2 (2019)</td>
-            </tr>
-
-            <tr>
-                <td>Roguelike</td>
-                <td>Risk of Rain 2</td>
-            </tr>
-
-            <tr>
-                <td>Third Person Shooter</td>
-                <td>Warframe</td>
-            </tr>
-
-            <tr>
-                <td>Metroidvania</td>
-                <td>Metroid Fusion</td>
-            </tr>
-
-            <tr>
-                <td>Platformer</td>
-                <td>Megaman X4</td>
-            </tr>
-        </table>
-
-        <p class="kevinParagraph">In addition to enjoying video games I have been able to transfer my passion for it,
-            and contribut to the Husky Game Club here on campus from the very start of my time here at UWB in 2019. As
-            of now I am the club president and wish to keep on helping the club be a community for anyone that enjoys
-            games regardless of genre interest. So there are a few things I am happy with, but still have things I wish
-            to develop in the club.</p>
-
-        <div><strong>Things I am happy with:</strong></div>
-
-        <ul style="color: #63064d;">
-            <li>Club sturcture</li>
-            <li>Members of the club</li>
-            <li>Weekly events with other clubs</li>
-        </ul>
-
-        <div><strong>Things I wish to improve based on priority:</strong></div>
-
-        <ol style="color: #63064d;">
-            <li>Have a way for people with interests in single player games to express themselves</li>
-            <li>Have collaborations with other clubs, due to the BWiSE collaborations being fun to be a part of.</li>
-            <li>For when in person classes come back have balance of in person and remote events for people to
-                partcipate in.</li>
-        </ol>
-
-        <div class="kevinParagraph"><em>You can find the HGC discord server here: </em><a
-                href="discord.gg/hgc"><strong>discord.gg/hgc</strong></a></div>
-
-        <img src="images/HGC-Flag-Horizontal.jpg" alt="HGC Flag" table="HGC Flag" style="width:377px">
-
-    </div>
-    <!--End of Kevin's Work-->
-
-    <!--Start of Xuan's Work-->
-    <a id="XuanPage"> </a>     
-    <div class="xuandiv">
-        <h3 id="xuanHeading">Xuan's Work</h3>
-        <a style="color: #bb8f88; text-decoration: underline" href="#XuanPage">This is Xuan's page</a>
-
-        <!--Mark Comment: for clarity's sake, you shouldn't name your class paragraph if it's not being applied to a paragraph!-->
-        <div class="xuandiv2">I don't know what to write so I guess I'll just write about my hobbies like my group
-            members
-
-            <p><strong>Things I like to do</strong></p>
-
-            <ul>
-                <li>Drawing</li>
-                <li>Painting</li>
-                <li>Cooking</li>
-                <li>Playing games (only play with friends)</li>
-                <li>Photography</li>
-                <li>Eating</li>
-                <li>Sleeping</li>
-            </ul>
-
-            <p>I'm <strong>obsessed</strong> with bubble tea</p>
-            <p style="text-align: center; color: black">Some bubble tea brand and <em>favorite drink</em></p>
-
-            <table id="xuanTable" style="width:50%">
-                <tr>
-                    <th><span style="color:#b38f75">Brand</span></th>
-                    <th><span style="color:#b38f75">Drink</span></th>
-                </tr>
-                <tr>
-                    <td>Sharetea</td>
-                    <td>Strawberry Ice Blended with Ice Cream and Lychee Jelly</td>
-                </tr>
-                <tr>
-                    <td>Ding Tea</td>
-                    <td>Monster Latte with Golden Boba</td>
-                </tr>
-                <tr>
-                    <td>Don't Yell At Me</td>
-                    <td>Four Season Green Tea with Sea Salt Cheese Milk Foam</td>
-                </tr>
-                <tr>
-                    <td>TP Tea</td>
-                    <td>Signature Black Tea</td>
-                </tr>
-                <tr>
-                    <td>Yifang Fruit Tea</td>
-                    <td>Hibiscus Lemonade</td>
-                </tr>
-
-            </table>
-
-        </div>
-
-        <p style="color: #b38f75"><strong>Photos of my pets</strong></p>
-
-        <p style="color: black"> My two cats Taylor and Teagan </p>
-        <p style="color: black"> And a shiba puppy </p>
-        <div class="petphoto">          
-            <div><img src="images/Taylor.jpg" alt="Taylor" width="321" height="234"></div>
-            <div><img src="images/Sushi.jpg" alt="Sushi" width="234" height="321"></div>
-            <div><img src="images/Teagan.jpg" alt="Teagan" width="307.5" height="234"></div>           
-        </div>
-    </div>
-    <!--End of Xuan's Work-->
-
-    <!--Start of sophia's work-->
     <a id="SophiaPage"> </a>
         <a href="#SophiaPage"></a>
 
     
     <hr>
-
-
     <h3>Sophia's Work</h3>
     <hr>
+    
+    <!--added a button/ parahraph chnage with java script-->
+    <p id="demo"> Are people naturaly curious or lazy?</p>
+    
+    <button type="button" onclick="myFunction()">click me </button>
+    
+    <script>
+    function myFunction() {
+      document.getElementById("demo").innerHTML = "why did you do that.";
+    }
+    </script>
+
+
+<!--added a window w/buton-->
+
+<button onclick="myFunction3()">click if you dare</button>
+
+<script>
+function myFunction3() {
+  var myWindow = window.open("", "MsgWindow", "width=200,height=100");
+  myWindow.document.write("<p>( ͡👁️ ͜ʖ ͡👁️) Bárbaro ");
+}
+</script>
+
+
+
+
+<!--(java script)added a window alert-->
+<script>
+window.alert("I hope you have a good day friend");
+</script>
+
+
+
+<div class="container">
+  
+ 
+    <h3>Things I <strong>love</strong></h3>
+ <p id="sophiasp"> playing with my dog <span style="text-decoration: underline;">Hiro</span> is one of the
+    <strong>best</strong> <em>parts</em> of my day </p>
 
 
     
-
-
-
-    <title>Bootstrap Example</title>
-    <!--Mark's Comment 5/16: Delete lines 246-252. You already included the bootstrap .css file in the head section of this webpage.-->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-</head>
-<body>
-
-<div class="container">
-    <!--Mark's Comment 5/16: Don't nest h tags, so either delete h2 or delete h3.-->
-  <h2>
-    <h3>Things I <strong>love</strong></h3></h2>
-    <!--Mark's Comment 5/16: You have a typo p tag here. It may help to look a the problems and debug console at the bottom of VSCode to check for syntax errors before pushing your code!-->
-  <p <p id="sophiasp"> playing with my dog <span style="text-decoration: underline;">Hiro</span> is one of the
-    <strong>best</strong> <em>parts</em> of my day </p>
 <div>This is Sophia's Page. I don't know what to write, so here are some things I love like my shiba Hiro</div>
 
-<!--Mark's Comment 5/16: Looks like you have an extra closing /p here.-->
-</p>            
   <table class="table table-dark table-hover">
     <thead>
       <tr>
@@ -298,28 +177,59 @@
 <div class="alert alert-danger">
     <div class="spinner-border"></div> <strong>Danger!</strong> This Dog is incredibly cute.
   </div>
-
     <h3>Hiro loves to play in the rain</h3>
     <img style="border: 10px solid;padding: 15px; " src="images/hiro for code.png" alt="hiro for code" width="500"
         height="600">
+        
         <div class="container">  <!--Mark's Comment 5/16: Cool that you found out how to include Font Awesome icons! -->
             <h1> my boi <i class="fas fa-heart"></i></h1>
             
           </div>
 
+
+
+    <!-- javascript objects, hiros age )-->
+
+
+          <p id="demo 4"></p>
+          <script>
+            var person = {
+              firstName : "Hiro",
+              lastName  : "chan",
+              age     : 5,
+              eyeColor  : "brown",
+              furcolor: "seasme",
+              breed:"shib inu"
+            };
+            
+            document.getElementById("demo 4").innerHTML =
+            person.firstName + " is " + person.age + " years old.";
+            </script>
+
+
+
+    
+
+
+
+
+
+
+
     <h2>list of things I <span style="color:red;">love</span> to do with hiro</h2> 
     <div class="container">  
-        <i class="fas fa-thumbs-up"></i></p> <!--Mark's Comment 5/16: extra /p here.-->
+        <i class="fas fa-thumbs-up"></i>
     </div>
     
-    <!--Mark's Comment 5/16: You already haev a title tag within the head tag at the top of this page, and you already include the Bootstrap link within the same head tag and the Bootstrap scripts at the end of this page. Delete lines 316-332.-->
+   
     
       
-    <title>Bootstrap Example</title>
-    <meta charset="utf-8">
+ 
+    
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous"></head>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" 
+    integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
@@ -339,7 +249,7 @@
 
     <h2>Things Hiro hates</h2>
     <div class="container">  
-        <p>An icon along with some text: <i class="fas fa-thumbs-down"></i></p> 
+    <i class="fas fa-thumbs-down"></i>
       </div>
     
     <ol>
@@ -348,98 +258,179 @@
         <li>sharing his new toys</li>
     </ol>
 
-    <!--End of sophia's work-->
-<!--Mark's Comment 5/16: I'd delete lines 353-438.-->
-    <!--Start Bon -->
-    <a id="BonPage"> </a>
-        <a href="#BonPage"></a>
-    <div id="bon_background">
-        <hr>
+    <!-- (javascript)added print page option-->
 
-        <!--Mark Comment: you have a closing span but no opening span tag.-->
-        <h3 id="bon_header">Bon's Work</span></h3>
+    <h2> This web page is a masterpice, if you want to frame it</h2>
 
-        <hr>
+    <p>Click the button to print out this web page.</p>
+    
+    <button onclick="window.print()">Print this page</button>  
 
-        <p class="bon_text">Hey I'm Bon! I'm just going to use this spot to talk about me and my car I guess.</p>
 
-        <h2>About me</h2>
 
-        <p class="bon_text">I'm a Sophomore at UWB who's inteded major is in accounting. I like to do code for fun, so
-            i'm not that good at it, but I'd say I'm half decent.</p>
-        <p class="bon_text">I currently work at the Chase Bank in Fremont from 8:00am to 5:30pm. Makes my schedule very
-            tight and I even do some homework at work.</p>
+000
 
-        <!--Mark's Comment: try to put all text within a paragraph or div tag-->
-        <!--Mark Comment: I expect you to fix things that I say in previous assignment comments!-->
-        <strong>
-            Things I like to do
-        </strong>
+<!-- (java script)i added a doc write with numarical addition -->
+<h2> my lucky number is</h2>
+    <script>
+        document.write(20 + 7);
+        </script>      
 
-        <div>
-            <ul style="list-style-type: square">
-                <li>Work on my Car</li>
-                <li>Chill with friends</li>
-                <li>Play Games</li>
-            </ul>
-        </div>
 
-        <h2>About my Car</h2>
+<!-- this button takes user to a page that only has the number on it (javascript)-->
+<button type="button" onclick="document.write(20 + 7)">want to look at this number some more</button>
 
-        <p class="bon_text">
-            <!--Mark's Comment: the br is one of those tags that doesn't need an end tag so delete the /br tags... but also, you might want to use div tags instead of br tags...-->
-            <br>I recently got a new car. Literally bought it Monday morning and am picking it up this Saturday
-            <!--Mark Comment: you still have a closing br tag here.-->
-            <br>Its the Scion FRS</br>
-            <br>Its a pretty nice car. It's black, low milage, but the best part is that it is my dream car.
-            <br>I'm pretty proud of myself because not only is it my dream car, but I'm also paying for it myself.
-            <br>The picture below is how the front looks. Not the greatest picture, but there will be better picture
-            after I pick it up this Saturday
-        </p>
+<!--link to redirect to my about page on personal project(javascript)-->
 
-        <img src="images/Frs.jpg" alt="Scion FRS" width="210" height="300">
+<h2> want to learn more about me? </h2>
 
-        <!--Mark's Comment: try to put all text within a p or div tag.-->
-        <!--Mark Comment: see above-->
-        <br>I have plans on modifying it. Here are a list of planned modification and the brand. There will definitely
-        be a lot more in the future, but for now this is all I will do.</br>
+<button onclick="myFunction2()">click here to see my bio!</button>
 
-        <div>
-            <table style="width:15%">
-                <tr>
-                    <!--Mark Comment: use the debug/problems panel in VSCode and resolve any errors before submitting the assignment! extra closing span tags here.-->
-                    <th class="table_header">Brand</span></th>
-                    <th class="table_header">Part Name</span></th>
-                </tr>
-                <tr>
-                    <td class="bon_text">Sparco</td>
-                    <td class="bon_text">Seats</td>
-                </tr>
-                <tr>
-                    <td class="bon_text">BC Racing</td>
-                    <td class="bon_text">Coilovers</td>
-                </tr>
-                <tr>
-                    <td class="bon_text">Tomei</td>
-                    <td class="bon_text">Unequal Length Headers</td>
-                </tr>
-                <tr>
-                    <td class="bon_text">AeroFlow</td>
-                    <td class="bon_text">Front Splitter</td>
-                </tr>
-            </table>
-        </div>
-        <hr>
+<script>
+function myFunction2() {
+  location.replace("http://creepyprincess.com/about-me/")
+}
+</script>
+<!--javascript booleans-->
+<p>the value of 330 > 9:</p>
 
-        <!--Mark's Comment: again, no need for a closing tag for the br tag, which just inserts a line break.-->
-        <br></br>
-        <hr>
-    </div>
-    <!-- End Bon -->
-    <!--below lines are needed for bootstrap-->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+<button onclick="myFunction6()">check it</button>
 
+<p id="demo6"></p>
+
+<script>
+function myFunction6() {
+  document.getElementById("demo6").innerHTML = 330 > 9;
+}
+</script>
+<!--javascrip maths pi-->
+<h2>PI</h2>
+
+<p>Math.PI returns the ratio of a circle's circumference to its diameter:</p>
+
+<p id="demo7"></p>
+
+<script>
+document.getElementById("demo7").innerHTML = Math.PI;
+</script>
+<!--random maths-->
+<h2> Number Game </h2>
+
+<p> I'm thinking of a number between 0 and 9</p>
+
+<button onclick="document.getElementById('demo8').innerHTML = getRndInteger(0,10)">Click Me</button>
+
+<p id="demo8"></p>
+
+<script>
+function getRndInteger(min, max) {
+  return Math.floor(Math.random() * (max - min)) + min;
+}
+</script>
+
+<!--display of the name of date-->
+<p id="demo9"></p>
+
+<script>
+var day;
+switch (new Date().getDay()) {
+  case 0:
+    day = "Sunday";
+    break;
+  case 1:
+    day = "Monday";
+    break;
+  case 2:
+    day = "Tuesday";
+    break;
+  case 3:
+    day = "Wednesday";
+    break;
+  case 4:
+    day = "Thursday";
+    break;
+  case 5:
+    day = "Friday";
+    break;
+  case  6:
+    day = "Saturday";
+}
+
+document.getElementById("demo9").innerHTML = "Today is " + day;
+</script>
 </body>
 
+
+<!-- added array-->
+<h2>Spanish Words</h2>
+<p id="demo22"></p>
+
+<script>
+var spanish = ["Capado","De Diez","Gotan"];
+document.getElementById("demo22").innerHTML = spanish;
+</script>
+
+
+<h2>and thier meanings</h2>
+<p id="demo23"></p>
+    <script>
+        var spanish = ["Cool","Very Good","Tango"];
+        document.getElementById("demo23").innerHTML = spanish;
+        </script>
+
+<!--time and date -->
+<button onclick="document.getElementById('demo24').innerHTML=Date()">The time is?</button>
+
+<p id="demo24"></p>
+
+<p id="demo25"></p>
+<script>
+    if (Math.random() < 0.5) {
+      text = "<a href='https://www.shibas.org'>Learn more about Shibas</a>";
+    } else {
+      text = "<a href='https://www.shibas.org'> learn more about shibas!</a>";
+    }
+    document.getElementById("demo25").innerHTML = text;
+    </script>
+
+
+
+    
+<!-- loop array-->
+<h2>colors</h2>
+<p id="demo26"></p>
+
+<script>
+var colors = ["pink", "blue", "white", "black", "yellow", "green"];
+var text = "";
+var i;
+for (i = 0; i < colors.length; i++) {
+  text += colors[i] + "<br>";
+}
+document.getElementById("demo26").innerHTML = text;
+</script>
+
+<!--this is a error handdeling-->
+<script>
+    var txt = "";
+    function message() {
+      try {
+        adddlert("Welcome guest!");
+      }
+      catch(err) {
+        txt = "Is this page amusing\n\n";
+        txt += "Click OK to continue viewing this page,\n";
+        txt += "or Cancel to return to the home page.\n\n";
+        if(!confirm(txt)) {
+          document.location.href = "http://localhost:8080/sophia.html";
+        }
+      }
+    }
+    </script>
+
+<input type="button33" value="View message" onclick="message()" />
+    
+
+
+</body>
 </html>
