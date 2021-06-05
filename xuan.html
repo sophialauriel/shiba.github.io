@@ -66,8 +66,8 @@
       <div class="container-fluid">
         <div class="row">
           <div class="col-lg-6" style="background-color: #ecdfd9">
-      <p><strong>Things I like to do</strong></p>
-            <ul>
+     <!-- <p><strong>Things I like to do</strong></p>
+           <ul>
               <li>Drawing</li>
               <li>Painting</li>
               <li>Cooking</li>
@@ -78,8 +78,23 @@
               <li>Taking care of my dog and cats</li>
               <li>Gardening</li>
               <li>Workout (sometimes)</li>
-          </ul>
+          </ul> -->
+          <p><strong>Things I like to do</strong></p>
+          <p id ="test"></p>
+
+          <script>
+
+          var favorites = ["Drawing", "Painting", "Cooking", "Playing games (only when playing with friends",
+          "Photography", "Eating", "Sleeping", "Taking care of my dog and cats", "Gardening", "Workout (sometimes)"];
+          var myText = "";
+          var i; 
+          for(i = 0; i < favorites.length; i++){
+            myText += favorites[i] + "<br>";
+          }
+          document.getElementById("test").innerHTML = myText;
+          </script>
           </div>
+
           <div class="col-lg-6" style="background-color: #f5ece9">
             <p style="text-align: center;">I'm <strong>obsessed</strong> with bubble tea</p>        
             <p style="text-align: center; color: black">Some bubble tea brand and <em>favorite drink</em></p>
