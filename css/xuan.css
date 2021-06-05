@@ -33,3 +33,57 @@ margin: 10px;
 padding: 20px;
 font-size: 30px;
 }
+
+.myBtton1, .myBtton2, .myBtton3{
+  color: #bb8f88;
+  background-color: #f0d9d7;
+  width: 60px;
+  height: 45px;
+  }
+
+  .innerContent {
+  border: 1px solid pink;
+  width: 321px;
+  height: 234px;
+  }
+
+  img {
+  width: 100%;
+  height: 100%;
+  }
+
+  #mySecondImg, #myThirdImg{
+  display: none
+  }
+
+  button {
+  outline: auto;
+  }
+
+  .petImages {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+  justify-content: center;
+  }
+
+  .threeButtons {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+  justify-content: center;
+  }
+
+  .oddEvenNumber {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+  justify-content: center;
+  }
+
+  .tryItButton {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+  justify-content: center;
+  }

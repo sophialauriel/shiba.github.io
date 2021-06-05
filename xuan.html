@@ -80,10 +80,9 @@
               <li>Workout (sometimes)</li>
           </ul> -->
           <p><strong>Things I like to do</strong></p>
-          <p id ="test"></p>
+          <p id ="hobbies"></p>
 
           <script>
-
           var favorites = ["Drawing", "Painting", "Cooking", "Playing games (only when playing with friends",
           "Photography", "Eating", "Sleeping", "Taking care of my dog and cats", "Gardening", "Workout (sometimes)"];
           var myText = "";
@@ -91,7 +90,7 @@
           for(i = 0; i < favorites.length; i++){
             myText += favorites[i] + "<br>";
           }
-          document.getElementById("test").innerHTML = myText;
+          document.getElementById("hobbies").innerHTML = myText;
           </script>
           </div>
 
@@ -124,10 +123,69 @@
                 <td>Hibiscus Lemonade</td>
             </tr>
         </table>
+        <p></p>
         </div>
         </div>
       </div>
     </div>   
+
+    
+      <p></p>
+      <div class="threeButtons">
+      <div class = "myImages">
+        <button class ="myBtton1" onclick="myFunction()">Taylor</button>
+        <button class ="myBtton2" onclick="myFunction2()">Sushi</button>
+        <button class ="myBtton3" onclick="myFunction3()">Teagan</button>
+    </div>
+  </div>
+      
+     <p></p>
+    <div class="petImages">
+        <div class="innerContent">
+            <div id="myFirstImg"><img src= "images/Taylor.jpg"></div>
+            <div id="mySecondImg"><img src= "images/Sushi.jpg"></div>
+            <div id="myThirdImg"><img src= "images/Teagan.jpg"></div>
+    </div>
+    </div>
+    
+  <script>
+    const myFunction = () => {
+        document.getElementById("myFirstImg").style.display = 'block';
+        document.getElementById("mySecondImg").style.display = 'none';
+        document.getElementById("myThirdImg").style.display = 'none';
+    }
+    const myFunction2 = () => {
+        document.getElementById("mySecondImg").style.display = 'block';
+        document.getElementById("myFirstImg").style.display = 'none';
+        document.getElementById("myThirdImg").style.display = 'none';
+    }
+    const myFunction3 = () => {
+        document.getElementById("myThirdImg").style.display = 'block';
+        document.getElementById("myFirstImg").style.display = 'none';
+        document.getElementById("mySecondImg").style.display = 'none';
+    }   
+  </script>
+  
+  <p></p> 
+  <p style="text-align: center;">Click the button to try something fun</p>
+  <div class="tryItButton">
+     <button onclick="myFunction4()">Try it</button>
+    </div>
+
+    <div class="oddEvenNumber">
+     <div id = "userInput"></div>
+    <script>
+        function myFunction4(){
+            var myNumber = prompt("Enter an integer","");
+            if(myNumber % 2 == 0){
+                document.getElementById("userInput").innerHTML = "This number is an even number";
+            }else{
+                document.getElementById("userInput").innerHTML = "This number is an odd number";
+            }
+        }
+    </script>
+    </div>
+
     <!-- <div class="xuandiv">
         <!--Mark Comment: for clarity's sake, you shouldn't name your class paragraph if it's not being applied to a paragraph
         <div class="xuandiv2" style="background-color: #ecdfd9">
@@ -181,6 +239,7 @@
             </div>
         </div> !-->
 
+        <!--
         <p style="color: #b38f75"><strong>Photos of my pets</strong></p>
 
         <p style="color: black"> My two cats Taylor and Teagan </p>
@@ -192,7 +251,8 @@
         </div>
         <div class="container">
             <a href="index.html" class="btn btn-light" role="button">Back To Home Page</a>
-        </div>
+        </div> 
+      -->
         
         <!--Mark's Comment 5/16: Besides the button above and the navbar at the top, was there anything related to Bootstrap on this page? Try using Bootstrap grids!-->
     <!--End of Xuan's Work-->
