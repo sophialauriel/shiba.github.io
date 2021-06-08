@@ -145,9 +145,22 @@
 
         <img src="images/HGC-Flag-Horizontal.jpg" alt="HGC Flag" table="HGC Flag" style="width:377px" class="clubLogo">
 
-        <p class="kevinParagraph">Click "Try it". Wait 3 seconds. The page will alert "Hello".</p>
-        <p class="kevinParagraph">Click "Stop" to prevent the first function to execute.</p>
-        <p class="kevinParagraph">(You must click "Stop" before the 3 seconds are up. not really spooky)</p>
+
+        <!--kevin JS work start-->
+        <p class="kevinParagraph">Click "Show me the spooky". Wait 3 seconds. The page will alert you with a spooky message!</p>
+        <p class="kevinParagraph">Click "No spooky, I change my mind" to prevent the spooky message.</p>
+        <p class="kevinParagraph">(You must click "No spooky, I change my mind" before 3 seconds go by. (not really spooky))</p>
+
+        <p id="clock" class="kevinParagraph"></p>
+
+        <script>
+            var myVar = setInterval(myTimer, 1000);
+
+            function myTimer() {    
+                var d = new Date();
+                document.getElementById("clock").innerHTML = d.toLocaleTimeString();
+            }
+        </script>
 
         <div class="kevinDiv">
         <button onclick="myVar = setTimeout(myFunction, 3000)" class="myButton">Show me the spooky</button>
@@ -163,6 +176,24 @@
         }
         </script>
 
+        <p class="kevinParagraph"><strong>Anime I am Currently Watching</strong></p>
+        <p id="list" class="kevinParagraph"></p>
+
+        <script>
+            var list = ["Megalobox", "The World Ends With You: The Animation", "Mars Red", "To Your Eternity", "Akudama Dive"];
+
+            var size = list.length;
+            var text = "";
+
+            for (i=0; i < size; ) {
+                text += list[i] + "<br>";
+                i++;
+            }      
+
+            document.getElementById("list").innerHTML = text;
+        </script>
+
+    <!--kevin JS work end-->
     </div>
 
      <!--below lines are needed for bootstrap-->
