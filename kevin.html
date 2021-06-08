@@ -145,6 +145,19 @@
 
         <img src="images/HGC-Flag-Horizontal.jpg" alt="HGC Flag" table="HGC Flag" style="width:377px" class="clubLogo">
 
+        <p>Click "Try it". Wait 3 seconds. The page will alert "Hello".</p>
+        <p>Click "Stop" to prevent the first function to execute.</p>
+        <p>(You must click "Stop" before the 3 seconds are up.)</p>
+
+        <button onclick="myVar = setTimeout(myFunction, 3000)">Try it</button>
+
+        <button onclick="clearTimeout(myVar)">Stop it</button>
+
+        <script>
+        function myFunction() {
+        alert("Hello");
+        }
+</script>
     </div>
      <!--below lines are needed for bootstrap-->
      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
@@ -152,6 +165,7 @@
     
      <!--End of Kevin's Work (just to upload to repository to try and solve an issue.)-->
 
+     
 </body>
 
 </html>
